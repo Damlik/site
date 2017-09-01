@@ -1,0 +1,195 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+div
+    display: block
+
+//Стили для секции Меню
+.menu ul li
+    margin-left: 10%
+    text-align: center
+    display: inline-block
+    font-family: robotobold
+    a
+        border: 2px solid #135f81
+        text-decoration: none
+        padding: 10px 20px
+        background-color: #2188b6
+        color: white
+        font-size: 16px
+        font-weight: 700
+        -moz-transition: all 0.1s ease
+        transition: all 0.1s ease
+        border-radius: 10px
+        display: inline-block
+        font-family: 'Roboto'
+        text-decoration: none 
+        &:hover
+            transition: all 0.25s ease
+            background-color: #5A6
+//Стили для Лого секции
+.logo
+    margin-top: 20px
+    height: 600px
+    background: #2188b6
+    img
+        margin-top: 80px
+//Стили для Главной секции        
+#main 
+    margin-top: 20px
+    margin-left: 30px
+    .uppercase
+        text-transform: uppercase
+    .wrap-img
+        position: absolute
+        margin-left: 65%
+        margin-top: 5%
+    .wrap-net-img  
+        position: absolute
+        margin-left: 15%
+        margin-top: 5%
+
+    span
+        text-transform: uppercase
+        font-family: robotobold
+    p
+        font-family: roboto
+        padding: 10px
+        border: 2px solid silver
+        border-radius: 30px
+
+//Стили Секции Новости    
+#news
+    background-color: #2188b6
+    .item
+        margin-top: 10px
+        width: 294px 
+        background-color: #5A6BC5
+        a
+            text-decoration: none
+        p
+            text-align: center
+            font-family: roboto
+            color: white
+        &:hover
+            border: 2px solid white
+            background-color: #5A6
+            transition: ease 0.25s
+#courses
+    display: flex
+    .courses_page
+        width: 75%
+        padding-left: 20px
+        .course_item
+            margin-top: 10px
+            border: 1px solid silver
+            padding: 19px
+            .course_item_inner
+                display: flex
+                .course_photo
+                        width: 24.848484848484848%
+                        overflow: hidden
+                        line-height: 1px
+                .course_content
+                        a
+                            font-family: robotobold
+                            color: black
+                            text-decoration: none
+                            &:hover
+                                transition: all 0.5s ease
+                                color: #5A6
+                        p
+                            font-family: roboto
+                        width: 55%
+                        padding-left: 16px
+                        padding-right: 16px
+                .course_button
+                        width: 20%
+                        .btn
+                            text-decoration: none
+                            padding: 10px 20px
+                            background-color: #2188b6
+                            color: white
+                            font-size: 16px
+                            font-weight: 700
+                            -moz-transition: all 0.1s ease
+                            transition: all 0.1s ease
+                            border-radius: 5px
+                            display: inline-block
+                            font-family: 'Roboto'
+                            &:hover
+                                transition: all 0.25s ease
+                                background-color: #5A6
+
+//Стили для футера
+footer
+    color: white
+    text-align: center
+    margin-top: 10px
+    background-color: #25799f
+    height: 100px
+//Стили для деталки новостей
+.text
+    font-family: roboto
+    margin: 20px
+    text-align: left
+    span
+        font-family: robotobold
+//Стили для деталки Курсов Повышения Квалификации
+.logo_button
+    a
+        position: absolute
+        margin-top: 5%
+        border: 2px solid #135f81
+        text-decoration: none
+        padding: 10px 20px
+        background-color: #2188b6
+        color: white
+        font-size: 16px
+        font-weight: 700
+        -moz-transition: all 0.1s ease
+        transition: all 0.1s ease
+        border-radius: 10px
+        display: inline-block
+        font-family: 'Roboto'
+        text-decoration: none 
+#desc
+    font-family: roboto
+@import "media" // Всегда в конце
